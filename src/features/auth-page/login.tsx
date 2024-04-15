@@ -18,7 +18,7 @@ interface LoginProps {
 
 export const LogIn: FC<LoginProps> = (props) => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-theme">
+    <div className="flex flex-col items-center justify-center w-full h-screen">
       <Card className="bg-transparent border-none shadow-none">
         <CardHeader className="gap-2">
           <CardTitle className="text-2xl">
