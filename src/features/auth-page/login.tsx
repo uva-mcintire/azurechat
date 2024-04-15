@@ -18,29 +18,14 @@ interface LoginProps {
 
 export const LogIn: FC<LoginProps> = (props) => {
   return (
-<<<<<<< HEAD
-    <div className="flex flex-col items-center justify-center w-full h-screen">
-=======
-    <div className="flex items-center justify-center w-full"
-     style={{
-       minHeight: '100vh',
-       minWidth: '100vw',
-       margin: '0',
-       padding: '0',
-       background: 'linear-gradient(to bottom, hsl(225, 35.71%, 21.96%), hsl(225, 23.68%, 29.8%))'
-     }}>
->>>>>>> parent of 0c87a56 (removed login card)
+    <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-theme">
       <Card className="bg-transparent border-none shadow-none">
         <CardHeader className="gap-2">
           <CardTitle className="text-2xl">
             <img src="comm-ai.png" alt="McINTIRE{AI}" style={{ width: '529px', height: '60px' }} />
           </CardTitle>
           <CardDescription>
-<<<<<<< HEAD
-            <b>Version: BETA</b><br>To be used for research and academic purposes only.</br>
-=======
-            * BETA *
->>>>>>> parent of 0c87a56 (removed login card)
+            BETA version
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4">
