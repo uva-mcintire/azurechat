@@ -21,10 +21,8 @@ export const LogIn: FC<LoginProps> = (props) => {
     <Card className="flex gap-2 flex-col min-w-[300px]">
       <CardHeader className="gap-2">
         <CardTitle className="text-2xl flex gap-2">
-          <Avatar>
-            <AvatarImage src={"ai-icon2.png"} />
-          </Avatar>
-          <span className="text-primary"></span>
+        <img src="comm-ai.png" alt="McINTIRE{AI}" style={{ width: '529px', height: '60px' }} />
+           <span className="text-primary"></span>
         </CardTitle>
         <CardDescription>
           Login in with your UVA account
