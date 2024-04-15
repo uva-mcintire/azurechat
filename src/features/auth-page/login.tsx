@@ -18,8 +18,14 @@ interface LoginProps {
 
 export const LogIn: FC<LoginProps> = (props) => {
   return (
-    <div className="flex items-center justify-center min-h-screen"
-         style={{ background: 'linear-gradient(to bottom, hsl(225, 35.71%, 21.96%), hsl(225, 23.68%, 29.8%)) !important' }}>
+    <div className="flex items-center justify-center w-full"
+     style={{
+       minHeight: '100vh',
+       minWidth: '100vw',
+       margin: '0',
+       padding: '0',
+       background: 'linear-gradient(to bottom, hsl(225, 35.71%, 21.96%), hsl(225, 23.68%, 29.8%))'
+     }}>
       <Card className="bg-transparent border-none shadow-none">
         <CardHeader className="gap-2">
           <CardTitle className="text-2xl">
