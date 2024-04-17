@@ -18,25 +18,27 @@ interface LoginProps {
 
 export const LogIn: FC<LoginProps> = (props) => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-theme">
-      <Card className="bg-transparent border-none shadow-none">
-        <CardHeader className="gap-2">
-          <CardTitle className="text-2xl">
-            <img src="comm-ai.png" alt="McINTIRE{AI}" style={{ width: '529px', height: '60px' }} />
-          </CardTitle>
-          <CardDescription>
-            BETA version
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="grid gap-4">
-          <Button onClick={() => signIn("azure-ad")}>Login with UVA Credentials</Button>
-          {props.isDevMode ? (
-            <Button onClick={() => signIn("localdev")}>
-              Basic Auth (DEV ONLY)
-            </Button>
-          ) : null}
-        </CardContent>
-      </Card>
-    </div>
+    <Card className="flex gap-2 flex-col min-w-[300px]">
+      <CardHeader className="gap-2">
+        <CardTitle className="text-2xl flex gap-2">
+          <Avatar className="h-8 w-8">
+            <AvatarImage src={"ai-icon.png"} />
+          </Avatar>
+          <span className="text-primary">{AI_NAME}</span>
+        </CardTitle>
+        <CardDescription>
+          Login in with your GitHub or Microsoft 365 account
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="grid gap-4">
+        <Button onClick={() => signIn("github")}>GitHub</Button>
+        <Button onClick={() => signIn("azure-ad")}> Microsoft 365</Button>
+        {props.isDevMode ? (
+          <Button onClick={() => signIn("localdev")}>
+            Basic Auth (DEV ONLY)
+          </Button>
+        ) : null}
+      </CardContent>
+    </Card>
   );
 };
