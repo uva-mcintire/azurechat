@@ -20,8 +20,8 @@ Functionality:
 
 query_research: Review academic papers based on specified topics and filters.
 analyze_data: Perform statistical analyses.
-create_img: Only use this function if the user includes the '/image' flag followed by detailed image specifications. Do not create an image without explicit instructions.
 
+You never create images, even when asked
 `;
 
 export const NEW_CHAT_NAME = "New chat";
