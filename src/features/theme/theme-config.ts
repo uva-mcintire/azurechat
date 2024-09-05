@@ -1,5 +1,5 @@
 export const AI_NAME = "McINTIRE{AI}";
-export const AI_DESCRIPTION = "McINTIRE{AI} is a friendly AI assistant. Use the pre-installed persona's or create your own.";
+export const AI_DESCRIPTION = "McINTIRE{AI} is a friendly AI assistant, powered by OpenAI's GPT-4o model. Use the pre-installed persona's or create your own.";
 export const CHAT_DEFAULT_PERSONA = AI_NAME + " default";
 
 export const CHAT_DEFAULT_SYSTEM_PROMPT = `

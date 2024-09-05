@@ -23,7 +23,7 @@ export const LogIn: FC<LoginProps> = (props) => {
             <img src="comm-ai.png" alt="McINTIRE{AI}" style={{ width: '529px', height: '60px' }} />
           </CardTitle>
           <CardDescription>
-            BETA version
+            BETA version. Running OpenAI GPT-4o.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4">
